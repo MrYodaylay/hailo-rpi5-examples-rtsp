@@ -45,8 +45,8 @@ echo "Installing required Python dependencies..."
 pip install -r requirements.txt
 
 # Install Hailo Apps Infrastructure from specified tag/branch
-echo "Installing Hailo Apps Infrastructure from version: $TAG..."
-pip install "git+https://github.com/hailo-ai/hailo-apps-infra.git@$TAG"
+echo "Installing Hailo Apps Infrastructure from fork"
+pip install "git+https://github.com/MrYodaylay/hailo-apps-infra-rtsp.git"
 
 # Install test requirements if needed
 if [[ "$INSTALL_TEST_REQUIREMENTS" == true ]]; then
